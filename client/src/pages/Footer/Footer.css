@@ -1,0 +1,16 @@
+.footer-section {
+    background-color: #537D5D;
+    padding: 20px 0;
+    color: white;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  

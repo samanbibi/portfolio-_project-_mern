@@ -1,0 +1,80 @@
+.sidebare-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-color: #537D5D;
+  box-shadow: inset 0px 4px 6px rgb(248, 246, 246);
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+  pointer-events: none;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1200px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+  
+  .sidebare {
+    height: 100vh;
+    background-color: #537D5D;
+    border: 3px solid white;
+    width: 90px;
+    position: fixed;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebare-toggle {
+    width: 200px;
+  }
+  
+  .sidebare-toggleicon {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+  }
+  
+  .sidebare-toggleicon p svg {
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  /* Container should shift right if sidebar exists */
+  .container {
+    margin-left: 90px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .sidebare-toggle ~ .container {
+    margin-left: 200px;
+  }
+  
+  /* Hide sidebar on small devices */
+  @media (max-width: 768px) {
+    .sidebare {
+      display: none;
+    }
+  
+    .container {
+      margin-left: 0 !important;
+    }
+  }
+  

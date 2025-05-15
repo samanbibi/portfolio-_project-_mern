@@ -1,0 +1,90 @@
+.profile-pic img {
+  border-radius: 90px;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 0 6px #537D5D, 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Container for all nav-items */
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Each nav-item block */
+.nav-item {
+  color: white;
+  margin: 20px 0 0 25px;
+}
+
+.nav-links {
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links svg {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.nav-links:hover {
+  color: black;
+}
+
+.nav-links .active {
+  color: black;
+  border-left: 5px solid black;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-pic img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .nav-item {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .nav-links {
+    font-size: 0.95rem;
+  }
+
+  .nav-links svg {
+    font-size: 1rem;
+  }
+  .menu-container {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .profile-pic img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .nav-links {
+    font-size: 0.85rem;
+  }
+
+  .nav-links svg {
+    margin-right: 6px;
+    font-size: 0.9rem;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,71 @@
+.home-container{
+    height:300px ;
+    color: black;
+    padding-left: 150px;
+   
+}
+.home-contained h2{
+    padding: 5px;
+    padding-top: 70px;
+}
+.home-contained h1 {
+    padding: 5px;
+   
+   
+}
+.button{
+  
+    margin-top: 20px;
+}
+.button .btn-hire{
+    background-color: white;
+    width: 130px;
+}
+.button .btn-hire:hover{
+   box-shadow: inset 0px 4px 8px rgb(35, 114, 81);
+   color: black;
+   background-color: white;
+   width: 150px;
+   transition:1s;
+}
+.button .btn-cv{
+    background-color: white;
+    width: 130px;
+    margin-left: 10px;
+}
+.button .btn-cv:hover{
+    box-shadow: inset 0px 4px 8px rgb(35, 114, 81);
+    color: black;
+    background-color: white;
+    width: 150px;
+    transition:1s;
+ }
+ .theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #1e1e1e;
+    margin-top: 20px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+  }
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 0;
+      margin: 0;
+      margin-top: 50px;
+    }
+    .home-container h2 {
+      font-size: 24px;
+    }
+    .home-container h1 {
+      font-size: 24px;
+    }
+  }
